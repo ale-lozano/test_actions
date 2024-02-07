@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Version Control
         uses: ale-lozano/edisa_versioning@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
