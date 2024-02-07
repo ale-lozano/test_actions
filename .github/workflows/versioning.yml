@@ -1,0 +1,11 @@
+name: My Workflow
+
+on:
+  pull_request:
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Version Control
+        uses: ale-lozano/edisa_versioning@v1
